@@ -1,0 +1,5 @@
+'email_transport' => 'SMTP',
+'email_transport_smtp.host' => 'mail.mailserverguru.com',
+'email_transport_smtp.password' => 'Ticket123!#',
+'email_transport_smtp.port' => 25,
+'email_transport_smtp.username' => 'dawoodkamalie1000@gmail.com',

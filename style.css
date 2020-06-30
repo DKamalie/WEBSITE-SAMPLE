@@ -1,0 +1,374 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Podkova', serif;
+}
+/*==============================================================================
+======================= SECTION ONE v
+============================================================================= */
+
+.sectionOne {
+  display: grid;
+  grid-template-columns: 55% 15% 15% 15% ;
+  grid-template-rows: 100px;
+  grid-template-areas:
+  ". home about contact";
+  background-image: url('./images/t1.jpg');
+  background-size: contain;
+  justify-items: center;
+  align-items: center;
+  color: white;
+  font-size: .5rem;
+  box-shadow: 2px 41px 42px -7px rgba(0,0,0,1);
+  position: sticky;
+  font-size: .8rem;
+  margin-left: 10;
+  transition: 1s;
+}
+
+.home {
+  grid-area: home;
+  background-color: rgba(0,0,0, 0.7);
+  padding: 1.5rem;
+  border-radius: 10%;
+  transition: .4s;
+}
+.home:hover {
+  transition: .6s ease-in-out;
+  background-color: white;
+  color:black;
+}
+.about {
+  grid-area: about;
+  background-color: rgba(0,0,0, 0.7);
+  padding: 1.5rem;
+  border-radius: 10%;
+  transition: .4s;
+}
+.about:hover {
+  transition: .6s ease-in-out;
+  background-color: white;
+  color:black;
+}
+.contact {
+  grid-area: contact;
+  background-color: rgba(0,0,0, 0.7);
+  padding: 1.5rem;
+  border-radius: 10%;
+  transition: .4s;
+}
+.contact:hover {
+  transition: .6s ease-in-out;
+  background-color: white;
+  color:black;
+}
+
+/*==============================================================================
+======================= SECTION ONE ^
+============================================================================= */
+
+/*==============================================================================
+======================= SECTION TWO v
+============================================================================= */
+.sectionTwo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 620px;
+  grid-template-areas:
+  "mainImage";
+  position: relative;
+  border-bottom: 10px solid black;
+  transition: 1s;
+
+}
+.mainImage {
+  grid-area: mainImage;
+}
+.mainImageText {
+  position: absolute;
+  bottom:0;
+  font-size: 1.8rem;
+  text-align: center;
+  color: white;
+  border: .6rem solid white;
+  padding: 5%;
+  background-color: rgba(0,0,0, 0.3);
+  transition: 1s;
+}
+.mainImageText:hover {
+  transition: 1.5s;
+  color: black;
+  border: .6rem solid black;
+}
+
+/*==============================================================================
+======================= SECTION TWO ^
+============================================================================= */
+
+
+/*==============================================================================
+======================= SECTION THREE v
+============================================================================= */
+.sectionThree {
+  transition: 1s;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px 500px 500px 500px 500px 500px;
+  grid-template-areas:
+  "pImgOne gImgOne"
+  "gImgTwo pImgTwo"
+  "pImgThree gImgThree"
+  "gImgFour pImgFour"
+  "pImgFive gImgFive";
+  align-items: center;
+  justify-items: center;
+  margin: 4rem 4rem 13rem 4rem;
+  grid-row-gap: 5%;
+  grid-column-gap: 10%;
+  font-size: 1.3rem;
+}
+
+.gImgOne {
+  grid-area: gImgOne;
+  box-shadow: 0px 0px 0px 8px #000000, 0px 0px 0px 16px #4B4C4B, 0px 0px 0px 24px #828482, 0px 0px 0px 31px #B2B5B2, 0px 0px 0px 39px #DADDDA, -8px 3px 20px 6px rgba(0,0,0,0);
+  background: #000000;
+}
+.pImgOne {
+  grid-area: pImgOne;
+
+}
+.gImgTwo {
+  grid-area: gImgTwo;
+  box-shadow: 0px 0px 0px 8px #000000, 0px 0px 0px 16px #4B4C4B, 0px 0px 0px 24px #828482, 0px 0px 0px 31px #B2B5B2, 0px 0px 0px 39px #DADDDA, -8px 3px 20px 6px rgba(0,0,0,0);
+  background: #000000;
+}
+.pImgTwo {
+  grid-area: pImgTwo;
+}
+.gImgThree {
+  grid-area: gImgThree;
+  box-shadow: 0px 0px 0px 8px #000000, 0px 0px 0px 16px #4B4C4B, 0px 0px 0px 24px #828482, 0px 0px 0px 31px #B2B5B2, 0px 0px 0px 39px #DADDDA, -8px 3px 20px 6px rgba(0,0,0,0);
+  background: #000000;
+}
+.pImgThree {
+  grid-area: pImgThree;
+}
+.gImgFour {
+  grid-area: gImgFour;
+  box-shadow: 0px 0px 0px 8px #000000, 0px 0px 0px 16px #4B4C4B, 0px 0px 0px 24px #828482, 0px 0px 0px 31px #B2B5B2, 0px 0px 0px 39px #DADDDA, -8px 3px 20px 6px rgba(0,0,0,0);
+  background: #000000;
+}
+.pImgFour {
+  grid-area: pImgFour;
+}
+.gImgFive {
+  grid-area: gImgFive;
+  box-shadow: 0px 0px 0px 8px #000000, 0px 0px 0px 16px #4B4C4B, 0px 0px 0px 24px #828482, 0px 0px 0px 31px #B2B5B2, 0px 0px 0px 39px #DADDDA, -8px 3px 20px 6px rgba(0,0,0,0);
+  background: #000000;
+}
+.pImgFive {
+  grid-area: pImgFive;
+}
+
+/*==============================================================================
+======================= SECTION THREE ^
+============================================================================= */
+
+/*==============================================================================
+======================= FOOTER v
+============================================================================= */
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px;
+  grid-template-areas:
+  "contactus quote top";
+  justify-items: center;
+  align-items: center;
+  background: black;
+  color: white;
+  font-size: .7rem;
+  text-align: center;
+}
+.contactus {
+  grid-area: contactus;
+  font-size: 1rem;
+}
+.contactusHeading {
+  text-decoration: underline;
+  letter-spacing: 3px;
+  padding: 1rem;
+}
+.quote {
+  grid-area: quote;
+}
+.top {
+  grid-area: top;
+}
+.top:hover {
+}
+.topHeading:hover {
+
+  padding: 2rem;
+  transition: 1s;
+}
+
+
+a:active {
+  transition: 2s;
+}
+#linkTest {
+  color: white;
+  text-decoration: none;
+}
+/*==============================================================================
+======================= FOOTER ^
+============================================================================= */
+
+
+
+/*=============================================================================
+==============================================================================
+======================= RESPONSIVENESS
+=============================================================================
+=============================================================================*/
+@media (max-width: 850px) {
+  .sectionOne{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100px;
+    grid-template-areas:
+    "home about contact";
+    color: white;
+    font-size: .7rem;
+    transition: 1s;
+  }
+  .home {
+    padding: 1rem;
+    transition: 1s;
+  }
+  .about {
+    padding: 1rem;
+    transition: 1s;
+  }
+  .contact {
+    padding: 1rem;
+    transition: 1s;
+  }
+}
+@media (max-width: 780px) {
+  .sectionThree {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas:
+    "gImgOne"
+    "pImgOne"
+    "gImgTwo"
+    "pImgTwo"
+    "gImgThree"
+    "pImgThree"
+    "gImgFour"
+    "pImgFour"
+    "gImgFive"
+    "pImgFive";
+    transition: 1s;
+    grid-row-gap:100px;
+    font-size: 1.2rem;
+  }
+  .mainImageText {
+    font-size: .6rem;
+    border: 5px solid white;
+  }
+}
+
+
+@media (max-width: 570px) {
+  footer {
+    font-size: .5rem;
+  }
+  .sectionTwo {
+    grid-template-rows: 500px;
+    transition: 1s;
+  }
+}
+
+@media (max-width: 370px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 60px 20px;
+    grid-template-areas:
+    "contactus"
+    "quote"
+    "top";
+    padding: 0rem;
+    grid-gap: 20px;
+    font-size: .4rem;
+    padding: 6%;
+  }
+  .pImgAll {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .contactus {
+    grid-area: contactus;
+    padding: 2rem;
+  }
+  .sectionOne {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-rows: 100px;
+      grid-template-areas:
+      "home about contact";
+      color: white;
+      font-size: .4rem;
+      transition: 1s;
+    }
+    .home {
+      padding: .5rem;
+      transition: 1s;
+    }
+    .about {
+      padding: .5rem;
+      transition: 1s;
+    }
+    .contact {
+      padding: .5rem;
+      transition: 1s;
+    }
+
+  .sectionTwo {
+    grid-template-rows: 400px;
+    transition: 1s;
+  }
+  .sectionThree {
+    grid-column-gap: 0;
+    margin: 4rem 0 13rem 0;
+    font-size: .9rem;
+    transition: 1s;
+  }
+}
+
+@media (max-width:280px) {
+  .sectionTwo {
+    grid-template-rows: 200px;
+    transition: 1s;
+  }
+  .mainImageText {
+    font-size: .4rem;
+    border: 3px solid white;
+  }
+}
+@media (max-width: 200px) {
+  .sectionTwo {
+    grid-template-rows: 180px;
+    transition: 1s;
+  }
+  .mainImageText {
+    font-size: .3rem;
+    border: 3px solid white;
+  }
+}
